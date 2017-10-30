@@ -1,0 +1,382 @@
+body {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Sans', sans-serif;
+  margin: 0;
+}
+/* Header Section */
+header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 24px auto 24px;
+  font-size: 32px;
+  background-color: white;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.logo img {
+  height: 50px;
+}
+.logo .logo2 {
+  color: grey;
+}
+header nav {
+  display: block;
+  font-size: 20px;
+  color: black;
+}
+header a {
+  text-decoration: none;
+  color: #3E3F40;
+  padding-left: 16px;
+}
+header a:hover {
+color: #81C1BF;
+}
+.phonenav {
+  display: none;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: #D9D9D9;
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+}
+.banner .pic {
+  width: 60%;
+  margin: 32px 24px;
+}
+.banner .banner-content {
+  width: 40%;
+  height: 100%;
+}
+.banner h3 {
+  font-size: 50px;
+  color: #3E3F40;
+  font-weight: bold;
+  line-height: 1;
+}
+.banner p {
+  font-size: 20px;
+  color: #3E3F40;
+  font-weight: bold;
+}
+.banner .button {
+  background-color: #3E3F40;
+  color: #D9D9D9;
+  text-align: center;
+  padding: 8px 0 8px 0;
+  width: 80%;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #6FC7C3;
+  color: white;
+  transition: background-color 200ms linear 0s;
+}
+.phonebanner {
+  display: none;
+}
+
+/* Main Content Section*/
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+  background-color: white;
+}
+.content .content-left {
+  width: 60%;
+  margin: 32px 24px;
+}
+.content-left img {
+  width: 100%;
+}
+.content-left h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  color: #3E3F40;
+}
+.content .content-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.content-right img {
+  width: 35%;
+  margin: 16px;
+}
+.content-right .orientation, .campus, .guest {
+  display: flex;
+  align-items: center;
+}
+.info h1 {
+  font-size: 20px;
+  color: #3E3F40;
+}
+.info p {
+  margin: 8px 0;
+  color: grey;
+  font-size: 16px;
+}
+.info a {
+  text-decoration: none;
+  color: #7FB2F0;
+}
+.phonecontent {
+  display: none;
+}
+
+/*Course Section*/
+.learn {
+  background-color: #D9D9D9;
+}
+.learn h1 {
+  display: flex;
+  justify-content: center;
+  color: #3E3F40;
+}
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 32px 72px;
+}
+.course {
+  margin: 0 32px 32px 0;
+  background-color: white;
+  width: 30%;
+}
+.course img{
+  width: 100%;
+}
+.course p {
+  color: grey;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.course .courseinfo {
+  margin: 16px 16px;
+}
+.phonelearn {
+  display: none;
+}
+
+/*Thesis Section*/
+.thesis {
+  background-color: white;
+}
+.thesis h1 {
+  display: flex;
+  justify-content: center;
+  color: #3E3F40;
+}
+.thesis-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+  background-color: white;
+}
+.thesis-left {
+  width: 60%;
+  margin: 32px 24px;
+}
+.thesis video {
+  width: 100%;
+}
+.thesis-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.thesis .info {
+  display: block;
+  color: #3E3F40;
+  width: 65%;
+}
+.thesis-right div {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.thesis img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+.phonethesis {
+  display: none;
+}
+
+/*Footer Section*/
+footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  height: 80px;
+  color: grey;
+}
+footer .foot {
+  margin: 16px 24px;
+}
+footer a {
+  text-decoration: none;
+  color: grey;
+}
+.phonefooter {
+  display: none;
+}
+
+/* Media Queries*/
+@media screen and (max-width: 650px){
+  header {
+    display: none;
+  }
+  .phonenav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    margin: 12px;
+  }
+  .phonenav img {
+    width: 50px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .banner {
+    display: none;
+  }
+  .phonebanner {
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .smallbanner img {
+    width: 100%;
+    height: auto;
+  }
+  .phonebanner-content {
+    width: 100%;
+    margin: 32px 16px;
+  }
+  .phonebanner-content h3 {
+    font-size: 30px;
+  }
+  .phone-button {
+    margin: auto;
+    background-color: #3E3F40;
+    color: #D9D9D9;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    display: none;
+  }
+  .phonecontent {
+    display: block;
+    margin: 16px;
+    width: 100%;
+    border-bottom: 1px #D9D9D9 solid;
+  }
+  .orientation, .campus, .guest, .fisma, .now {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .phonecontent img {
+    display: block;
+    width: 90%;
+    height: auto;
+  }
+  .phonecontent .info {
+    width: auto;
+    margin-bottom: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .learn {
+    display: none;
+  }
+  .phonelearn {
+    display: block;
+    background-color: white;
+    margin: 8px 16px;
+  }
+  .phonelearn .courseinfo {
+    margin: 0px;
+    background: #D9D9D9;
+    width: 100%;
+  }
+  .phonelearn h3 {
+    padding: 16px 16px 24px 16px;
+    font-size: 20px;
+    width: 80%
+  }
+  .phonelearn h1 {
+    margin-bottom: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+}
+/* Phone Theis */
+@media screen and (max-width: 650px) {
+  .thesis {
+    display: none;
+  }
+  .phonethesis {
+    display: block;
+    margin-top: 16px;
+    border-bottom: 1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+  }
+  .phonethesis h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .phonethesis video {
+    width: 100%;
+  }
+}
+/* Phone Footer */
+@media screen and (max-width: 650px) {
+  footer {
+    display: none;
+  }
+  .phonefooter {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    margin: 32px 24px;
+    color: #D9D9D9;
+  }
+}
